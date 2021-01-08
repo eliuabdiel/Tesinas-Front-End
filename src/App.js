@@ -1,22 +1,18 @@
-import logo from './logo.svg';
-import { Container,Row, Col } from 'react-bootstrap';
+import {Login} from './Components/Login';
+import { SignIn } from './Components/SingIn';
+import { Container,Row, Col,Card, Form,Button } from 'react-bootstrap';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 function App() {
   return (
-    <Container fluid="xl">
-      <Row className="">
-        <Col xl="2">
-          
-        </Col>
-        <Col xl="8">
-          <h1>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
-        </Col>
-        <Col xl="2">
+    <Container 
+      className="d-flex align-items-center justify-content-center"
+      style={{minHeight: "100vh"}}>
+      <Login />
+      {/* <SignIn /> */}
       
-        </Col>
-      </Row>
     </Container>
   );
 }
