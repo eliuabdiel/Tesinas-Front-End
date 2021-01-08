@@ -3,7 +3,7 @@ import { Container,Row, Col,Card, Form,Button } from 'react-bootstrap';
 export class Login extends Component {
     render(){
         return(
-            <Card style={{ width: '18rem' }} className="mx-auto my-auto">
+            <Card style={{ width: '18rem' ,backgroundColor: '#264d78',color:'white'}} className="mx-auto my-auto">
                 <Card.Header>Login</Card.Header>
                 <Card.Body>
                 <Form>
