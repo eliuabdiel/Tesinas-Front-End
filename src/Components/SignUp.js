@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Card, Form, Button } from "react-bootstrap";
-// import logo from "../img/logo_oficial (1).png";
+import logo from "../img/logo_oficial (1).png";
 
 export class SignUp extends Component {
   render() {
@@ -16,7 +16,10 @@ export class SignUp extends Component {
         {/* <Card.Header>Sign Up</Card.Header> */}
 
         <Card.Body>
-          {/* <img src={logo} alt="UPSIN"></img> */}
+          <div className='d-flex justify-content-center'>
+            <img src={logo} alt="UPSIN" style={{width: '120px'}}></img>
+          </div>
+          
 
           <div>
             <Card.Title className="cardTitle">
