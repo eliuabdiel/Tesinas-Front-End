@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Container,Row, Col,Card, Form,Button } from 'react-bootstrap';
+import React, { Component } from "react";
+import { Card, Form, Button } from "react-bootstrap";
 export class Login extends Component {
     render(){
         return(
