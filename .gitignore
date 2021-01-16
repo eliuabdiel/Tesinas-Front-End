@@ -5,11 +5,8 @@
 /.pnp
 .pnp.js
 
-#test
-/src/setupTest.js
-
 #lint
-**/*.eslintcache
+/.eslintcache
 
 # testing
 /coverage
