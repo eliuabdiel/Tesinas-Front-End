@@ -6,7 +6,7 @@
 .pnp.js
 
 #test
-**/setupTest.js
+/src/setupTest.js
 
 #lint
 **/*.eslintcache
