@@ -20,7 +20,7 @@ function App() {
             Login
           </Button>
         </Link> 
-        <Link to="singup">
+        <Link to="signup">
           <Button >
             SignUp
           </Button>
@@ -36,7 +36,7 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/singup">
+          <Route path="/signup">
             <SignUp />
           </Route>
         </Switch>
