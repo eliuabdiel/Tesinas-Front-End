@@ -2,4 +2,8 @@
 
 Start, once you clone the repository
 
-$ npm start 
+$ npm install
+
+then n
+
+$ npm start
