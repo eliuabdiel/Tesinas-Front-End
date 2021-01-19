@@ -1,45 +1,21 @@
 import React, { Component } from "react";
 import { Card, Form, Button } from "react-bootstrap";
 import logo from "../img/logo_oficial (1).png";
+import "./SignUp.css";
 
 export class SignUp extends Component {
   render() {
     return (
-      <Card
-        style={{
-          background: "#2F4159",
-          color: "white",
-          border: "none",
-          borderRadius: "5px",
-        }}
-      >
-        {/* <Card.Header>Sign Up</Card.Header> */}
-
+      <Card className="cardContainer">
         <Card.Body>
-          <div className='d-flex justify-content-center'>
-            <img src={logo} alt="UPSIN" style={{width: '120px'}}></img>
-          </div>
-          
-
-          <div>
-            <Card.Title className="cardTitle">
-              Crear una cuenta nueva
-            </Card.Title>
+          <div className="logo">
+            <img src={logo} alt="UPSIN" width="82px"></img>
           </div>
 
           <Form>
             <Form.Group>
               <Form.Control
-                style={{
-                  width: "100%",
-                  boxSizing: "border-box",
-                  padding: "12px 5px",
-                  borderRadius: "0px",
-                  background: "none",
-                  border: "none",
-                  borderBottom: "3px solid #465568",
-                  placeholder: "color: red",
-                }}
+                className="formInput"
                 type="text"
                 placeholder="Usuario"
               />
@@ -47,15 +23,7 @@ export class SignUp extends Component {
 
             <Form.Group>
               <Form.Control
-                style={{
-                  width: "100%",
-                  boxSizing: "border-box",
-                  padding: "12px 5px",
-                  borderRadius: "0px",
-                  background: "none",
-                  border: "none",
-                  borderBottom: "3px solid #465568",
-                }}
+                className="formInput"
                 type="password"
                 placeholder="Contraseña"
                 aria-describedby="pass"
@@ -64,15 +32,7 @@ export class SignUp extends Component {
 
             <Form.Group>
               <Form.Control
-                style={{
-                  width: "100%",
-                  boxSizing: "border-box",
-                  padding: "12px 5px",
-                  borderRadius: "0px",
-                  background: "none",
-                  border: "none",
-                  borderBottom: "3px solid #465568",
-                }}
+                className="formInput"
                 type="password"
                 placeholder="Confirmar contraseña"
                 aria-describedby="confirmPass"
@@ -81,37 +41,20 @@ export class SignUp extends Component {
 
             <Form.Group>
               <Form.Control
-                style={{
-                  width: "100%",
-                  boxSizing: "border-box",
-                  padding: "12px 5px",
-                  borderRadius: "0px",
-                  background: "none",
-                  border: "none",
-                  borderBottom: "3px solid #465568",
-                }}
+                className="formInput"
                 type="email"
                 placeholder="Correo electronico"
               />
             </Form.Group>
 
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              <Button
-                style={{ width: "100%", margin: "30px 0px 30px" }}
-                variant="primary"
-                type="submit"
-              >
+            <div className="btnContainer">
+              <Button className="sendButton" variant="primary" type="submit">
                 Enviar
               </Button>
             </div>
           </Form>
 
-          <div style={{ textAlign: "center" }}>
+          <div className="txt centered">
             <span>Universidad Politécnica de Sinaloa</span>
             <br></br>
             <span>
