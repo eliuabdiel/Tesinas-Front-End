@@ -9,7 +9,7 @@ export class SignUp extends Component {
       <Card className="cardContainer">
         <Card.Body>
           <div className="logo">
-            <img src={logo} alt="UPSIN" width="82px"></img>
+            <img src={logo} alt="UPSIN" width="120px"></img>
           </div>
 
           <Form>
