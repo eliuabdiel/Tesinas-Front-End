@@ -1,1 +1,5 @@
-
+.card-style{
+    width: '18rem';
+    background-color:  rgb(47, 65, 89);
+    color: white;
+}

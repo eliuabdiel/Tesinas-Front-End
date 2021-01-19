@@ -1,10 +1,15 @@
 import React, { Component } from "react";
 import { Card, Form, Button } from "react-bootstrap";
+import logo from "../img/logo_oficial (1).png";
+import "../App.css";
 export class Login extends Component {
     render(){
         return(
-        <div class="back">
-            <Card style={{ width: '18rem' ,backgroundColor: '#264d78',color:'white'}} className="mx-auto my-auto">
+        <div>
+            <Card style={{ background: "#2F4159", color: "white", border: "none",borderRadius: "5px",}}>
+                <div className='d-flex justify-content-center'>
+                    <img src={logo} alt="UPSIN" style={{width: '120px', padding: "20px 5px",}}></img>
+                </div>
                 <Card.Header>Iniciar sesion</Card.Header>
                 <Card.Body>
                 <Form>
@@ -19,10 +24,17 @@ export class Login extends Component {
                     </Form.Group>
                     <Form.Group controlId="formBasicCheckbox">
                     </Form.Group>
-                    <Button className="mx-auto" variant="primary" type="submit">
+                    <Button className="mx-auto" variant="primary" type="submit" style={{ width: "100%", margin: "30px 0px 30px" }}>
                     Iniciar sesion
                     </Button>
                 </Form>
+                <div style={{ textAlign: "center" }}>
+                    <span>Universidad Politécnica de Sinaloa</span>
+                        <br></br>
+                    <span>
+                        <small>©2021 Todos los Derechos Reservados</small>
+                    </span>
+                </div>
                 </Card.Body>
             </Card>
         </div>
