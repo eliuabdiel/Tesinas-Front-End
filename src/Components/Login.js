@@ -6,7 +6,7 @@ export class Login extends Component {
     render(){
         return(
         <div>
-            <Card style={{ background: "#2F4159", color: "white", border: "none",borderRadius: "5px",}}>
+            <Card className={"card-style"}>
                 <div className='d-flex justify-content-center'>
                     <img src={logo} alt="UPSIN" style={{width: '120px', padding: "20px 5px",}}></img>
                 </div>
@@ -28,7 +28,7 @@ export class Login extends Component {
                     Iniciar sesion
                     </Button>
                 </Form>
-                <div style={{ textAlign: "center" }}>
+                <div className={"tex"}>
                     <span>Universidad Politécnica de Sinaloa</span>
                         <br></br>
                     <span>
