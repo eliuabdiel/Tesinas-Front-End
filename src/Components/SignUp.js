@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Card, Form, Button } from "react-bootstrap";
 import logo from "../img/logo_oficial (1).png";
-import "./SignUp.css";
+import "../App.css";
 
 export class SignUp extends Component {
   render() {
@@ -9,21 +9,16 @@ export class SignUp extends Component {
       <Card className="cardContainer">
         <Card.Body>
           <div className="logo">
-            <img src={logo} alt="UPSIN" width="82px"></img>
+            <img src={logo} alt="UPSIN" className="upsin"></img>
           </div>
 
           <Form>
             <Form.Group>
-              <Form.Control
-                className="formInput"
-                type="text"
-                placeholder="Usuario"
-              />
+              <Form.Control type="text" placeholder="Usuario" />
             </Form.Group>
 
             <Form.Group>
               <Form.Control
-                className="formInput"
                 type="password"
                 placeholder="Contraseña"
                 aria-describedby="pass"
@@ -32,23 +27,18 @@ export class SignUp extends Component {
 
             <Form.Group>
               <Form.Control
-                className="formInput"
                 type="password"
                 placeholder="Confirmar contraseña"
-                aria-describedby="confirmPass"
+                aria-describedby="pass"
               />
             </Form.Group>
 
             <Form.Group>
-              <Form.Control
-                className="formInput"
-                type="email"
-                placeholder="Correo electronico"
-              />
+              <Form.Control type="email" placeholder="Correo electronico" />
             </Form.Group>
 
             <div className="btnContainer">
-              <Button className="sendButton" variant="primary" type="submit">
+              <Button className="sendBtn" variant="primary" type="submit">
                 Enviar
               </Button>
             </div>
