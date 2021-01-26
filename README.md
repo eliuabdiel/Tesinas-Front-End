@@ -1,4 +1,4 @@
-# Tesinas project 
+# Proyecto Pasten
 
 Start, once you clone the repository
 
