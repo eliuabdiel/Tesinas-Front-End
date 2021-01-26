@@ -1,43 +1,58 @@
-import React, { Component } from "react";
 import { Card, Form, Button } from "react-bootstrap";
 import logo from "../img/logo_oficial (1).png";
-import "../App.css";
-export class Login extends Component {
-    render(){
-        return(
-        <div>
-            <Card className={"card-style"}>
-                <div className='d-flex justify-content-center'>
-                    <img src={logo} alt="UPSIN" style={{width: '120px', padding: "20px 5px",}}></img>
-                </div>
-                <Card.Header>Iniciar sesion</Card.Header>
-                <Card.Body>
-                <Form>
-                    <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Correo electronico</Form.Label>
-                    <Form.Control type="email" placeholder="Email" />
-                    </Form.Group>
+import "./SignUp.css";
+import {
+  Link
+} from "react-router-dom";
 
-                    <Form.Group controlId="formBasicPassword">
-                    <Form.Label>Contraseña</Form.Label>
-                    <Form.Control type="password" placeholder="Contraseña" />
-                    </Form.Group>
-                    <Form.Group controlId="formBasicCheckbox">
-                    </Form.Group>
-                    <Button className="mx-auto" variant="primary" type="submit" style={{ width: "100%", margin: "30px 0px 30px" }}>
-                    Iniciar sesion
-                    </Button>
-                </Form>
-                <div className={"tex"}>
-                    <span>Universidad Politécnica de Sinaloa</span>
-                        <br></br>
-                    <span>
-                        <small>©2021 Todos los Derechos Reservados</small>
-                    </span>
-                </div>
-                </Card.Body>
-            </Card>
-        </div>
-        )
-    }
+export function Login() {
+
+    return (
+      <Card className="cardContainer">
+        <Card.Body>
+          <div className="logo">
+            <img src={logo} alt="UPSIN" width="120px"></img>
+          </div>
+
+          <Form>
+            <Form.Group>
+              <Form.Control
+                className="formInput"
+                type="text"
+                placeholder="Usuario"
+              />
+            </Form.Group>
+
+            <Form.Group>
+              <Form.Control
+                className="formInput"
+                type="password"
+                placeholder="Contraseña"
+                aria-describedby="pass"
+              />
+            </Form.Group>
+            
+            <div className="btnContainer">
+              <Button className="sendButton" variant="primary" type="submit">
+                Iniciar Sesión
+              </Button>
+            </div>
+
+          </Form>
+
+          <div className="txt centered">
+            <Link to="/signup">
+              <label className="mb-4">
+                Crear una cuenta.
+              </label>
+            </Link>
+            <label className="mb-0">Universidad Politécnica de Sinaloa</label>
+            <br></br>
+            <label className="mb-0">
+              <small>©2021 Todos los Derechos Reservados</small>
+            </label>
+          </div>
+        </Card.Body>
+      </Card>
+    );
 }

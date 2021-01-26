@@ -31,9 +31,16 @@
   color: #a3b3c3 !important;
   border-bottom: 3px solid #465568 !important;
 }
-
+.formInput:focus {
+  color: #ffffff !important; 
+  border-bottom:3px solid #ffffff !important;
+  box-shadow: none !important;
+}
 .form-control::placeholder {
   color: #a3b3c3 !important;
+}
+.form-control:focus::placeholder {
+  color: #ffffff !important;
 }
 
 .btnContainer {
@@ -43,5 +50,5 @@
 
 .sendButton {
   width: 100%;
-  margin: 15px 0px 30px;
+  margin: 15px 0px 15px;
 }
