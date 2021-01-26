@@ -71,8 +71,8 @@ export function SignUp(){
             </Form.Group>
             {passwords.passwordConfirmation.length !== 0 
               ? passwords.passwordConfirmation !== passwords.password
-                ? <label>Las no contraseñas coinciden</label>
-                : <label>Las contraseñas coinciden</label>
+                ? <label className="text-danger">Las no contraseñas coinciden</label>
+                : <label className="text-success">Las contraseñas coinciden</label>
               : null
             }
             <div className="btnContainer">
