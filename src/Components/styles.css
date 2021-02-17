@@ -55,4 +55,17 @@
 .sendButton {
   width: 100%;
   margin: 15px 0px 15px;
+  border-width: 2px !important;
+  border-color: #007bff !important;
+  background-color: white !important;
+  color: #007bff !important;
+}
+
+.sendButton:hover {
+  background: #007bff !important;
+  color: white !important;
+}
+
+.mb-4:hover {
+  cursor: pointer;
 }
