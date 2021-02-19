@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Login } from "./Login";
-import { SignUp } from "./SignUp";
+import { Login } from "./Login/Login";
+import { SignUp } from "./SignUp/SignUp";
 import PrivateRoute from "./PrivateRoute";
-import NotFound from "../Pages/NotFound";
-import CustomNavbar from "./CustomNavbar";
+import NotFound from "../Pages/NotFound/NotFound";
+import CustomNavbar from "./CustomNavbar/CustomNavbar";
 import { useAuth } from "../Contexts/AuthContext";
-import Home from "../Pages/Home";
-import Profile from "./Profile";
+import Home from "../Pages/Home/Home";
+import Profile from "./Profile/Profile";
 
 function App() {
   const { currentUser } = useAuth();
