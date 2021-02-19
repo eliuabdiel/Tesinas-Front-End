@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Container, Card, Form, Button, Alert } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import { useAuth } from "../Contexts/AuthContext";
-import logo from "../img/logo_oficial (1).png";
+import logo from "../img/logo_oficial.png";
 import "./styles.css";
 
 export function SignUp() {
