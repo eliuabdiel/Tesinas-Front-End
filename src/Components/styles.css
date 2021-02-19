@@ -1,3 +1,5 @@
+/* Login and SignUp Component */
+
 .cardContainer {
   background: #2f4159 !important;
   color: #ffffff;
@@ -69,6 +71,8 @@
 .mb-4:hover {
   cursor: pointer;
 }
+
+/* NotFound page */
 
 .error-container {
   min-height: 85vh;
