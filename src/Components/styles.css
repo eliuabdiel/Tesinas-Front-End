@@ -70,15 +70,31 @@
   cursor: pointer;
 }
 
-.error-message {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: calc(100vh - 100px);
+.error-container {
+  min-height: 85vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container {
+.error-container .left {
+  margin: 0 50px;
   text-align: center;
+}
+
+@media (max-width: 500px) {
+  .error-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
