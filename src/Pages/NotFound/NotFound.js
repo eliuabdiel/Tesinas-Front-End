@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../../img/404.png";
+import "./styles.css";
 
 export default function NotFound() {
   return (
