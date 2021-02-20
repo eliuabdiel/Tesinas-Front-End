@@ -1,6 +1,6 @@
 /* Login and SignUp Component */
 
-.cardContainer {
+.card-container {
   background: #2f4159 !important;
   color: #ffffff;
   border: none !important;
@@ -9,7 +9,7 @@
   width: 59vh;
 }
 
-.logo {
+.logo-upsin {
   display: flex;
   justify-content: center;
   margin-bottom: 12px;
@@ -23,7 +23,7 @@
   text-align: center;
 }
 
-.formInput {
+.form-input {
   width: 100% !important;
   box-sizing: border-box !important;
   padding: 12px 5px !important;
@@ -35,7 +35,7 @@
   border-bottom: 3px solid #465568 !important;
 }
 
-.formInput:focus {
+.form-input:focus {
   color: #ffffff !important;
   border-bottom: 3px solid #ffffff !important;
   box-shadow: none !important;
@@ -49,12 +49,12 @@
   color: #ffffff !important;
 }
 
-.btnContainer {
+.button-container {
   display: flex;
   justify-content: center;
 }
 
-.sendButton {
+.send-button {
   width: 100%;
   margin: 15px 0px 15px;
   border-width: 2px !important;
@@ -63,13 +63,18 @@
   color: #007bff !important;
 }
 
-.sendButton:hover {
+.send-button:hover {
   background: #007bff !important;
   color: white !important;
 }
 
 .mb-4:hover {
   cursor: pointer;
+}
+
+.text-danger,
+.text-success {
+  font-size: 13px;
 }
 
 /* NotFound page */
@@ -85,6 +90,14 @@
 .error-container .left {
   margin: 0 50px;
   text-align: center;
+}
+
+.error-container .left h1 {
+  font-size: 100px;
+}
+
+.error-container .left p {
+  font-size: 18px;
 }
 
 @media (max-width: 500px) {
