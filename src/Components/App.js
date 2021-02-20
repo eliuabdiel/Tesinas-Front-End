@@ -15,19 +15,19 @@ function App() {
       {currentUser && <CustomNavbar />}
       <Switch>
         <PrivateRoute exact path="/">
-          <Home />{" "}
+          <Home />
         </PrivateRoute>
         <PrivateRoute path="/perfil">
           <Profile />
         </PrivateRoute>
         <Route path="/login">
-          <Login />{" "}
+          <Login />
         </Route>
         <Route path="/signup">
-          <SignUp />{" "}
+          <SignUp />
         </Route>
         <Route to="*">
-          <NotFound />{" "}
+          <NotFound />
         </Route>
       </Switch>
     </Router>

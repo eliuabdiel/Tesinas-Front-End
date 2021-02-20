@@ -8,7 +8,6 @@ import "../styles.css";
 export function Login() {
   const [error, setError] = useState();
   const [loading, setLoading] = useState(false);
-
   const emailRef = useRef();
   const passwordRef = useRef();
   const { login, currentUser } = useAuth();
@@ -39,19 +38,18 @@ export function Login() {
         minHeight: "100vh",
       }}
     >
-      <Card className="cardContainer">
+      <Card className="card-container">
         <Card.Body>
-          {error && <Alert variant="danger">{error}</Alert>}
-          <div className="logo">
+          <div className="logo-upsin">
             <img src={logo} alt="UPSIN" width="120px"></img>
           </div>
 
           <Form onSubmit={_handleSubmit}>
             <Form.Group>
               <Form.Control
-                className="formInput"
+                className="form-input"
                 type="email"
-                placeholder="Correo"
+                placeholder="Correo electrónico"
                 ref={emailRef}
                 required
               />
@@ -59,7 +57,7 @@ export function Login() {
 
             <Form.Group>
               <Form.Control
-                className="formInput"
+                className="form-input"
                 type="password"
                 placeholder="Contraseña"
                 aria-describedby="pass"
@@ -67,19 +65,12 @@ export function Login() {
                 required
               />
             </Form.Group>
-            <div className="txt centered">
-              <label className="mb-0">Universidad Politécnica de Sinaloa</label>
-              <br></br>
-              <label className="mb-0">
-                <small>©2021 Todos los Derechos Reservados</small>
-              </label>
-            </div>
-            <div className="btnContainer">
+
+            {error && <Alert variant="danger">{error}</Alert>}
+
+            <div className="button-container">
               <Button
-                className="sendButton"
-                onClick={() => {
-                  console.log("me has clickeado");
-                }}
+                className="send-button"
                 variant="primary"
                 type="submit"
                 disabled={loading}
@@ -88,8 +79,16 @@ export function Login() {
               </Button>
             </div>
           </Form>
+
+          <div className="txt centered">
+            <label className="mb-0">Universidad Politécnica de Sinaloa</label>
+            <label className="mb-0">
+              <small>©2021 Todos los Derechos Reservados</small>
+            </label>
+          </div>
         </Card.Body>
       </Card>
+
       <div className="w-400 mt-2">
         <Link to="/signup">
           <label className="mb-4">Crear una cuenta</label>

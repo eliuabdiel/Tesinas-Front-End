@@ -12,7 +12,6 @@ export function SignUp() {
   });
   const [error, setError] = useState();
   const [loading, setLoading] = useState(false);
-
   const emailRef = useRef();
   const userRef = useRef();
   const passwordRef = useRef();
@@ -48,6 +47,7 @@ export function SignUp() {
       passwordConfirmation: passwords.passwordConfirmation,
     });
   }
+
   function _handlePasswordConfirmationChange(e) {
     setPasswords({
       passwordConfirmation: e.target.value,
@@ -62,17 +62,16 @@ export function SignUp() {
         minHeight: "100vh",
       }}
     >
-      <Card className="cardContainer">
+      <Card className="card-container">
         <Card.Body>
-          {error && <Alert variant="danger">{error}</Alert>}{" "}
-          {/* si hay algun error pone una alerta en el componente */}
-          <div className="logo">
+          <div className="logo-upsin">
             <img src={logo} alt="UPSIN" width="120px"></img>
           </div>
+
           <Form onSubmit={_handleSubmit}>
             <Form.Group>
               <Form.Control
-                className="formInput"
+                className="form-input"
                 type="text"
                 placeholder="Usuario"
                 ref={userRef}
@@ -82,9 +81,9 @@ export function SignUp() {
 
             <Form.Group>
               <Form.Control
-                className="formInput"
+                className="form-input"
                 type="email"
-                placeholder="Correo electronico"
+                placeholder="Correo electrónico"
                 ref={emailRef}
                 required
               />
@@ -92,7 +91,7 @@ export function SignUp() {
 
             <Form.Group>
               <Form.Control
-                className="formInput"
+                className="form-input"
                 type="password"
                 placeholder="Contraseña"
                 aria-describedby="pass"
@@ -104,7 +103,7 @@ export function SignUp() {
 
             <Form.Group>
               <Form.Control
-                className="formInput"
+                className="form-input"
                 type="password"
                 placeholder="Confirmar contraseña"
                 aria-describedby="confirmPass"
@@ -113,6 +112,7 @@ export function SignUp() {
                 required
               />
             </Form.Group>
+
             {passwords.passwordConfirmation.length !== 0 ? (
               passwords.passwordConfirmation !== passwords.password ? (
                 <label className="text-danger">
@@ -124,9 +124,12 @@ export function SignUp() {
                 </label>
               )
             ) : null}
-            <div className="btnContainer">
+
+            {error && <Alert variant="danger">{error}</Alert>}
+
+            <div className="button-container">
               <Button
-                className="sendButton"
+                className="send-button"
                 variant="primary"
                 type="submit"
                 disabled={loading}
@@ -135,6 +138,7 @@ export function SignUp() {
               </Button>
             </div>
           </Form>
+
           <div className="txt centered">
             <label className="mb-0">Universidad Politécnica de Sinaloa</label>
             <label className="mb-0">
@@ -143,7 +147,8 @@ export function SignUp() {
           </div>
         </Card.Body>
       </Card>
-      <div className="w-400 mt-4">
+
+      <div className="w-400 mt-2">
         <Link to="/login">
           <label className="mb-4">Ya tengo una cuenta</label>
         </Link>
