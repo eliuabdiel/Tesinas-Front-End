@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useAuth } from "../../Contexts/AuthContext";
 import { Navbar, Nav, Dropdown, Alert } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
+import logo from "../../img/logo_oficial.png";
 
 export default function CustomNavbar() {
   const [error, setError] = useState();
@@ -27,7 +28,12 @@ export default function CustomNavbar() {
           }}
           style={{ cursor: "pointer" }}
         >
-          Tesinas
+          <img
+            src={logo}
+            width="35"
+            className="d-inline-block align-top"
+            alt=""
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

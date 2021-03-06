@@ -10,10 +10,10 @@ export default function Profile() {
         <Card style={{ maxWidth: "600px" }}>
           <Card.Header>Perfil</Card.Header>
           <Card.Body>
-            <h5>Email:&nbsp; {currentUser.email} </h5>
-            <h5>Nombre:</h5>&nbsp;
-            <h5>Matricula:</h5>&nbsp;
-            <h5>Rol:</h5>&nbsp;
+            <h5>Email:&nbsp;{currentUser.email}</h5>
+            <h5>Nombre:&nbsp;</h5>
+            <h5>Matricula:&nbsp;</h5>
+            <h5>Rol:&nbsp;</h5>
           </Card.Body>
         </Card>
       </Container>

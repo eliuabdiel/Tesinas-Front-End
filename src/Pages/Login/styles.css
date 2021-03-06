@@ -1,6 +1,4 @@
-/* Login and SignUp Component */
-
-.cardContainer {
+.card-container {
   background: #2f4159 !important;
   color: #ffffff;
   border: none !important;
@@ -9,7 +7,7 @@
   width: 59vh;
 }
 
-.logo {
+.logo-upsin {
   display: flex;
   justify-content: center;
   margin-bottom: 12px;
@@ -23,7 +21,7 @@
   text-align: center;
 }
 
-.formInput {
+.form-input {
   width: 100% !important;
   box-sizing: border-box !important;
   padding: 12px 5px !important;
@@ -35,7 +33,7 @@
   border-bottom: 3px solid #465568 !important;
 }
 
-.formInput:focus {
+.form-input:focus {
   color: #ffffff !important;
   border-bottom: 3px solid #ffffff !important;
   box-shadow: none !important;
@@ -49,12 +47,12 @@
   color: #ffffff !important;
 }
 
-.btnContainer {
+.button-container {
   display: flex;
   justify-content: center;
 }
 
-.sendButton {
+.send-button {
   width: 100%;
   margin: 15px 0px 15px;
   border-width: 2px !important;
@@ -63,7 +61,7 @@
   color: #007bff !important;
 }
 
-.sendButton:hover {
+.send-button:hover {
   background: #007bff !important;
   color: white !important;
 }
@@ -72,33 +70,7 @@
   cursor: pointer;
 }
 
-/* NotFound page */
-
-.error-container {
-  min-height: 85vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.error-container .left {
-  margin: 0 50px;
-  text-align: center;
-}
-
-@media (max-width: 500px) {
-  .error-container {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-}
-
-img {
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+.text-danger,
+.text-success {
+  font-size: 13px;
 }
