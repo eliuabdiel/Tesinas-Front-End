@@ -39,6 +39,13 @@ export default function CustomNavbar() {
             >
               Perfil
             </Nav.Link>
+            <Nav.Link
+              onClick={() => {
+                history.push("/help");
+              }}
+            >
+              Ayuda
+            </Nav.Link>
           </Nav>
           <Nav>
             <Dropdown as={Nav.Item}>
